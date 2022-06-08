@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+img {
+  display: block;
+}
+
+label {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.content {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mobile-image img {
+  height: 670px;
+  flex: 1;
+}
+
+.login {
+  flex: 1;
+}
