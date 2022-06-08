@@ -1,0 +1,69 @@
+.reenter {
+  background-color: #fff;
+  padding: 3rem 3rem 2rem;
+  border: 1px solid #ececec;
+  margin-bottom: .8rem;
+  margin-top: .75rem;
+}
+
+.instagram-logo {
+  margin-bottom: 1.5rem;
+}
+
+.profile-image {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-image: url(../images/foto-perfil.jpg);
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.submit {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.remove {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #0095f6;
+  font-weight: 600;
+}
+
+.create-account {
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+
+.create-account p {
+  color: #8e8e8e;
+}
+
+.change-account {
+  margin-top: .5rem;
+}
+
+.apps p {
+  margin-bottom: .5rem;
+}
+
+@media (max-width: 450px) {
+  .reenter {
+    background: none;
+    border: 0;
+  }
+
+  .reenter {
+    padding: 1rem;
+  }
+
+  .submit {
+    width: 200px;
+  }
+}

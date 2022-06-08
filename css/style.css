@@ -4,6 +4,7 @@
   list-style: none;
   text-decoration: none;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -26,15 +27,245 @@ label {
 
 .content {
   display: flex;
-  width: 80%;
-  margin: 0 auto;
+  margin: 6.5rem auto 0;
+  justify-content: center;
+}
+
+.mobile-image {
+  margin-right: 1rem;
 }
 
 .mobile-image img {
-  height: 670px;
-  flex: 1;
+  height: 600px;
 }
 
 .login {
-  flex: 1;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 365px;
+}
+
+.create-account, .input {
+  background-color: #fff;
+  padding: 3rem 3rem 1rem;
+  border: 1px solid #ececec;
+}
+
+.input {
+  margin-bottom: 0.8rem;
+  margin-top: .75rem;
+}
+
+.instagram-logo {
+  margin: 0 auto 2.5rem;
+  max-width: 100%;
+}
+
+.input input {
+  display: block;
+  width: 100%;
+  padding: .5rem .4rem;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  background-color: #fafafa;
+  font-size: 12px;
+  outline-color: #bdbdbd;
+  outline-width: 1px;
+}
+
+.input input:last-of-type {
+  margin-top: .4rem;
+}
+
+.submit {
+  display: block;
+  width: 100%;
+  margin-top: .8rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #0095f6;
+  background-color: #0095f6;
+  color: #fff;
+  padding: .35rem;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.create-account {
+  margin-bottom: 1rem;
+}
+
+.separator {
+  margin: .75rem 0;
+}
+
+.separator span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+
+.separator span::before,
+.separator span::after {
+  content: '';
+  display: inline-block;
+  width: 42%;
+  height: 1px;
+  background-color: #dfdfdf;
+  margin-right: 10px;
+  position: relative;
+  top: -5px;
+}
+
+.separator span::after {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.facebook-login img {
+  display: inline-block;
+}
+
+.facebook-login {
+  color: #385185;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  width: 70%;
+  margin: .9rem auto 0;
+  font-weight: 600;
+  font-size: 14px;
+  align-self: center;
+}
+
+.forgot-password {
+  color: #00376b;
+  font-size: 12px;
+  padding: .5rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: .5rem 0 0;
+}
+
+.create-account {
+  padding: 1.25rem 3rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.create-account p {
+  margin-right: 6px;
+}
+
+.create-account a {
+  color: #0095f6;
+  font-weight: 600;
+}
+
+.apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apps p {
+  font-size: .875rem;
+}
+
+.app-stores {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.app-stores img {
+  max-width: 8.5rem;
+}
+
+.app-stores img + img {
+  margin-left: 10px;
+}
+
+.footer {
+  margin: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.footer a,
+.footer span {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.principal a,
+.secondary a {
+  padding: 0 8px 12px 8px;
+  flex: 0 0 auto;
+}
+
+.secondary,
+.settings {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.settings * {
+  padding: 0 8px 12px;
+}
+
+@media (max-width: 875px) {
+  .mobile-image {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .login {
+    width: 100%;
+  }
+
+  .content {
+    margin: 1rem 0;
+  }
+
+  .input,
+  .create-account {
+    background: none;
+    border: 0;
+  }
+
+  .input {
+    padding: 1rem 2rem;
+  }
+
+  .separator span::after,
+  .separator span::before {
+    width: 40%;
+  }
+
+  .facebook-login {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .facebook-login img {
+    margin-right: 10px;
+  }
+
+  .create-account {
+    padding: 1rem 0;
+  }
 }
